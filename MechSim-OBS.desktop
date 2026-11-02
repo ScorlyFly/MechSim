@@ -4,4 +4,4 @@ Name=MechSim OBS Virtual Cable
 Comment=Create virtual audio cable
 Exec=/bin/bash -c "sleep 5; pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS"
 Terminal=false
-X-GNOME-Autostart-enabled=true
+# X-GNOME-Autostart-enabled=true  -- specify for gnome 
