@@ -142,9 +142,9 @@ static int handle_events(struct libinput *libinput)
 			print_key_event(event);
 			break;
 		// Sorry, mouse button is also a key.
-		case LIBINPUT_EVENT_POINTER_BUTTON:
-			print_button_event(event);
-			break;
+		// case LIBINPUT_EVENT_POINTER_BUTTON:
+		//	print_button_event(event);
+		//	break;
 		default:
 			break;
 		}
