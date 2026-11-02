@@ -30,29 +30,7 @@ mechsim -s turquoise -V 60  # choose soundpack turquoise at 60% volume
 
 
 
-# Create virtual audio cable (space) but you need used instruction bottom that how it insturction but save virtual cable after reboot system
-pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS    
 
-
-mkdir -p ~/.config/autostart
-nano ~/.config/autostart/MechSim-OBS.desktop
-# you can take it script in files project
-# continue
-pactl list short sinks
-# you should find
-# MechSim_OBS
-# after reboot system
-
-# download plagin for obs you can his download through flathub
-PipeWire Audio Capture
-
-# continue in obs find it plagin in top bar tools/plagin manager selected our plagin
-# and selected audio devices our virtual cable
-# after all sound with our keyboard will to in virual cable  
-
-
-PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what be output sound will on the virtual space and but in your headphones
-```
 
 ## Installation
 
@@ -88,6 +66,7 @@ sudo make install
       mechsim -l                    # List all available sounds
 
 
+
 ## Available Sounds:
 
 - nk-cream
@@ -121,6 +100,35 @@ sudo make install
 - libevdev-dev
 - libudev-d
 
+
+```
+# Create virtual audio cable (space) but you need used instruction bottom that how it insturction but save virtual cable after reboot system
+pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS    
+
+
+mkdir -p ~/.config/autostart
+nano ~/.config/autostart/MechSim-OBS.desktop
+# you can take it script in files project
+# continue
+pactl list short sinks
+# you should find
+# MechSim_OBS
+# after reboot system
+
+# download plagin for obs you can his download through flathub
+PipeWire Audio Capture
+
+# continue in obs find it plagin in top bar tools/plagin manager selected our plagin
+# and selected audio devices our virtual cable
+# after all sound with our keyboard will to in virual cable  
+
+
+PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what be output sound will on the virtual space and but in your headphones
+
+what be not write after it long command used just script named mechrun
+1. you sould it script move in mv mechrun /usr/local/bin/
+2. after you can used command mechrun for speed run keyboard sound
+```
 
 ## Motivation 
 
