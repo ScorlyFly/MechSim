@@ -27,6 +27,26 @@ mechsim         # default uses sound eg-oreo at volume 50
 mechsim -l      # list out all sound packs
 
 mechsim -s turquoise -V 60  # choose soundpack turquoise at 60% volume
+
+pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS    # Create virsual audio cable (space) but you need used instruction bottom that how it insturction but save
+virtual cable after reboot system
+
+mkdir -p ~/.config/autostart
+nano ~/.config/autostart/MechSim-OBS.desktop
+you can take it screep in files project
+continue
+pactl list short sinks
+you should find
+MechSim_OBS
+after reboot system
+
+download plagin for obs PipeWire Audio Capture  you can his download through flathub
+continue in obs find it plagin in top bar tools/plagin manager selected our plagin
+and selected audio devices our virtual cable
+after all sound with our keyboard will to in virual cable  
+
+
+PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what be output sound will on the virtual space and but in your headphones
 ```
 
 ## Installation
