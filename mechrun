@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100
