@@ -124,9 +124,9 @@ PipeWire Audio Capture
 
 PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what be output sound will on the virtual space and but in your headphones
 
-what be not write after it long command used just script named mechrun
-1. you sould it script move in mv mechrun /usr/local/bin/
-2. after you can used command mechrun for speed run keyboard sound
+# what be not write after it long command used just script named mechrun
+# 1. you sould it script move in mv mechrun /usr/local/bin/
+# 2. after you can used command mechrun for speed run keyboard sound
 ```
 
 ## Motivation 
