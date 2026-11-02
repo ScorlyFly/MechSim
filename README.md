@@ -100,7 +100,6 @@ sudo make install
 - libevdev-dev
 - libudev-d
 
-
 ```
 # Create virtual audio cable (space) but you need used instruction bottom that how it insturction but save virtual cable after reboot system
 pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS    
