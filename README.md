@@ -43,7 +43,9 @@ pactl list short sinks
 # MechSim_OBS
 # after reboot system
 
-# download plagin for obs PipeWire Audio Capture  you can his download through flathub
+# download plagin for obs you can his download through flathub
+PipeWire Audio Capture
+
 # continue in obs find it plagin in top bar tools/plagin manager selected our plagin
 # and selected audio devices our virtual cable
 # after all sound with our keyboard will to in virual cable  
