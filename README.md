@@ -36,17 +36,17 @@ pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.
 
 mkdir -p ~/.config/autostart
 nano ~/.config/autostart/MechSim-OBS.desktop
-you can take it screep in files project
-continue
+# you can take it screep in files project
+# continue
 pactl list short sinks
-you should find
-MechSim_OBS
-after reboot system
+# you should find
+# MechSim_OBS
+# after reboot system
 
-download plagin for obs PipeWire Audio Capture  you can his download through flathub
-continue in obs find it plagin in top bar tools/plagin manager selected our plagin
-and selected audio devices our virtual cable
-after all sound with our keyboard will to in virual cable  
+# download plagin for obs PipeWire Audio Capture  you can his download through flathub
+# continue in obs find it plagin in top bar tools/plagin manager selected our plagin
+# and selected audio devices our virtual cable
+# after all sound with our keyboard will to in virual cable  
 
 
 PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what be output sound will on the virtual space and but in your headphones
