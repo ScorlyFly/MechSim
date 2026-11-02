@@ -36,7 +36,7 @@ pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.
 
 mkdir -p ~/.config/autostart
 nano ~/.config/autostart/MechSim-OBS.desktop
-# you can take it screep in files project
+# you can take it script in files project
 # continue
 pactl list short sinks
 # you should find
