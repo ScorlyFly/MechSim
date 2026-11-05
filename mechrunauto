@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS &
+PID=$!
+
+wait $PID
+
+# Проверяем статус завершения через $?
+if [ $? -eq 0 ]; then
+  PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100
+else
+  echo "Произошла ошибка при interface MechSim-OBS не создан."
+fi
