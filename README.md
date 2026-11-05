@@ -133,8 +133,6 @@ PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what
 
 ```bash
 if your not work Option 2 try used file mechrunauto in his write automatically create interface and run mechsim
-after you can used it commands what be run mechrun in background 
-nohup mechrun > output.log 2>&1 &
 ```
 
 ## Motivation 
