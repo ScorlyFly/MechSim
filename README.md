@@ -100,7 +100,7 @@ sudo make install
 - libevdev-dev
 - libudev-d
 
-```bash
+```bash  ##option 2
 ## Create virtual audio cable (space) but you need used instruction bottom that how it insturction but save virtual cable after reboot system
 pactl load-module module-null-sink sink_name=MechSim_OBS sink_properties=device.description=MechSim-OBS    
 
@@ -127,6 +127,11 @@ PULSE_SINK=MechSim_OBS mechsim -s eg-crystal-purple -V 100   # allow you do what
 # what be not write after it long command used just script named mechrun
 # 1. you sould it script move in mv mechrun /usr/local/bin/
 # 2. after you can used command mechrun for speed run keyboard sound
+```
+
+
+```bash
+if your not work Option 2 try used file mechrunauto in his write automatically create interface and run mechsim
 ```
 
 ## Motivation 
